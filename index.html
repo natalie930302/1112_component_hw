@@ -5,9 +5,230 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Component HW</title>
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <a href="carousel.html">Carousel</a>
-    <a href="accordion.html">Accordion</a>
+    <main>
+      <menu class="menu">
+        <button class="menu__item active" value="accordion">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M8,13 h8" />
+            <path d="M5,19 l7-14 l7,14" />
+          </svg>
+        </button>
+        <button class="menu__item" value="carousel">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M17,7 a7,7 0 1, 0 0,10" />
+          </svg>
+        </button>
+        <button class="menu__item" value="table">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M6,6 h12" />
+            <path d="M12,6.5 v13" />
+          </svg>
+        </button>
+        <button class="menu__item" value="puppy">
+          <svg class="icon" viewBox="0 0 24 24">
+            <path d="M7,20 v-15 h7 a4.5,4.5 0 0 1 0,9 h-7" />
+          </svg>
+        </button>
+
+        <div class="menu__border">
+          <svg viewBox="0 0 202.9 45.5">
+            <clipPath
+              id="menuBorder"
+              clipPathUnits="objectBoundingBox"
+              transform="scale(0.0049285362247413 0.021978021978022)"
+            >
+              <path
+                d="M6.7,45.5c5.7,0.1,14.1-0.4,23.3-4c5.7-2.3,9.9-5,18.1-10.5c10.7-7.1,11.8-9.2,20.6-14.3c5-2.9,9.2-5.2,15.2-7
+                    c7.1-2.1,13.3-2.3,17.6-2.1c4.2-0.2,10.5,0.1,17.6,2.1c6.1,1.8,10.2,4.1,15.2,7c8.8,5,9.9,7.1,20.6,14.3c8.3,5.5,12.4,8.2,18.1,10.5
+                    c9.2,3.6,17.6,4.2,23.3,4H6.7z"
+              />
+            </clipPath>
+          </svg>
+        </div>
+      </menu>
+      <div class="content">
+        <div class="accordion">
+          <div class="item">
+            <p class="number">01</p>
+            <p class="text">Where are these chairs assembled?</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+            <div class="hidden-box">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus quae sint voluptatibus nisi corporis quo nihil,
+                veritatis maiores, unde, laboriosam enim natus consequatur!
+              </p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Quas ducimus autem vel nostrum quia dolorem recusandae
+                  molestiae!
+                </li>
+                <li>
+                  Suscipit, iure culpa reprehenderit aspernatur placeat quaerat.
+                </li>
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item open">
+            <p class="number">02</p>
+            <p class="text">How long do I have to return my chair?</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+            <div class="hidden-box">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus quae sint voluptatibus nisi corporis quo nihil,
+                veritatis maiores, unde, laboriosam enim natus consequatur!
+              </p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Quas ducimus autem vel nostrum quia dolorem recusandae
+                  molestiae!
+                </li>
+                <li>
+                  Suscipit, iure culpa reprehenderit aspernatur placeat quaerat.
+                </li>
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="item">
+            <p class="number">03</p>
+            <p class="text">Do you ship to countries outside the EU?</p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+            <div class="hidden-box">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Temporibus quae sint voluptatibus nisi corporis quo nihil,
+                veritatis maiores, unde, laboriosam enim natus consequatur!
+              </p>
+              <ul>
+                <li>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                </li>
+                <li>
+                  Quas ducimus autem vel nostrum quia dolorem recusandae
+                  molestiae!
+                </li>
+                <li>
+                  Suscipit, iure culpa reprehenderit aspernatur placeat quaerat.
+                </li>
+                <li>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="carousel hide">
+          <img src="img\maria.jpg" alt="Maria de Almeida" />
+          <blockquote class="testimonial">
+            <p class="testimonial-text">
+              "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia
+              nesciunt aliquid ex atque quibusdam. Rerum officia unde suscipit
+              quo sunt hic illo fugit."
+            </p>
+            <p class="testimonial-author">Maria de Almeida</p>
+            <p class="testimonial-job">
+              Senior Product Manager at EDP Comercial
+            </p>
+          </blockquote>
+          <button class="btn btn--left">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15.75 19.5L8.25 12l7.5-7.5"
+              />
+            </svg>
+          </button>
+          <button class="btn btn--right">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="btn-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M8.25 4.5l7.5 7.5-7.5 7.5"
+              />
+            </svg>
+          </button>
+          <div class="dots">
+            <button class="dot dot--fill">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+            <button class="dot">&nbsp;</button>
+          </div>
+        </div>
+        <div class="table hide"></div>
+        <div class="puppy hide"></div>
+      </div>
+    </main>
+    <script src="js/menu.js"></script>
+    <script src="js/accordion.js"></script>
   </body>
 </html>
