@@ -435,7 +435,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 .table table {
@@ -450,12 +450,12 @@ main {
   text-align: left;
 }
 
-.table thead tr {
+.table table thead tr {
   background-color: #087f5b;
   color: #fff;
 }
 
-.table thead tr th {
+.table table thead tr th {
   width: 25%;
 }
 /*# sourceMappingURL=style.css.map */

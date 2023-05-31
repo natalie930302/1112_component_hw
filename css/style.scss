@@ -305,7 +305,7 @@ main {
   width: 90%;
   margin: auto;
   display: flex;
-  overflow: scroll;
+  overflow-x: scroll;
   table {
     width: 100%;
     font-size: 18px;
@@ -315,13 +315,13 @@ main {
       padding: 16px 24px;
       text-align: left;
     }
-  }
-  thead{
-    tr {
-      background-color: #087f5b;
-      color: #fff;
-      th {
-        width: 25%;
+    thead{
+      tr {
+        background-color: #087f5b;
+        color: #fff;
+        th {
+          width: 25%;
+        }
       }
     }
   }
