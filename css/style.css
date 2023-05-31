@@ -340,6 +340,7 @@ main {
 .pagination .pagination-wrap .btn-page {
   border-radius: 50%;
   background-color: #fff;
+  color: #000;
   cursor: pointer;
   transition: all 0.3s ease;
 }
