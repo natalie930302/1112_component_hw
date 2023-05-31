@@ -16,13 +16,6 @@
   display: none;
 }
 
-html {
-  box-sizing: border-box;
-}
-html * {
-  box-sizing: inherit;
-}
-
 body {
   margin: 0;
   height: 100vh;
@@ -129,7 +122,6 @@ main {
 .content > * {
   animation: slide-up 1000ms forwards, fade-in 500ms forwards;
 }
-
 @keyframes fade-out {
   0% {
     opacity: 1;
@@ -146,6 +138,7 @@ main {
     transform: translateY(0%);
   }
 }
+
 .accordion {
   width: min(700px, 90%);
   margin: auto;
@@ -161,49 +154,52 @@ main {
   grid-template-columns: auto 1fr auto;
   -moz-column-gap: 1rem;
        column-gap: 1rem;
-  row-gap: 1.5rem;
+  row-gap: 0;
   align-items: center;
-  transition: all 0.1s ease;
+  transition: all 0.5s ease;
 }
 .accordion .item .number,
 .accordion .item .text {
   font-size: 24px;
   font-weight: 500;
+  transition: all 0.5s ease;
 }
 .accordion .item .number {
-  color: #ced4da;
+  color: #bbb;
 }
 .accordion .item .icon {
   width: 24px;
   height: 24px;
-  stroke: #087f5b;
+  stroke: var(--bgColorItem);
   cursor: pointer;
   transition: all 0.5s ease;
 }
 .accordion .item .hidden-box {
   grid-column: 2;
-  display: none;
+  height: 0;
+  overflow: hidden;
 }
 .accordion .item .hidden-box p {
   line-height: 1.6;
   margin-bottom: 24px;
 }
 .accordion .item .hidden-box ul {
-  color: #868e96;
+  color: #bbb;
   margin-left: 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
 .accordion .item.open {
-  border-color: #087f5b;
+  border-color: var(--bgColorItem);
+  row-gap: 1.5rem;
 }
 .accordion .item.open .hidden-box {
-  display: block;
+  height: auto;
 }
 .accordion .item.open .number,
 .accordion .item.open .text {
-  color: #087f5b;
+  color: var(--bgColorItem);
 }
 .accordion .item.open .icon {
   transform: rotate(180deg);
@@ -212,7 +208,7 @@ main {
 .carousel {
   width: min(800px, 85%);
   margin: auto;
-  background-color: #087f5b;
+  background-color: var(--bgColorItem);
   padding: 32px 48px 32px 86px;
   border-radius: 8px;
   position: relative;
@@ -264,7 +260,7 @@ main {
 .carousel .btn .btn-icon {
   height: 24px;
   width: 24px;
-  stroke: #087f5b;
+  stroke: var(--bgColorItem);
 }
 .carousel .btn.btn--left {
   left: 0;
@@ -288,12 +284,12 @@ main {
   height: 12px;
   width: 12px;
   background-color: #fff;
-  border: 2px solid #087f5b;
+  border: 2px solid var(--bgColorItem);
   border-radius: 50%;
   cursor: pointer;
 }
 .carousel .dots .dot.dot--fill {
-  background-color: #087f5b;
+  background-color: var(--bgColorItem);
 }
 
 .table {
@@ -313,9 +309,15 @@ main {
   text-align: left;
 }
 .table table thead tr {
-  background-color: #087f5b;
+  background-color: var(--bgColorItem);
   color: #fff;
 }
 .table table thead tr th {
   width: 25%;
+}
+.table table tbody tr:nth-child(odd) {
+  background-color: #f8f9fa;
+}
+.table table tbody tr:nth-child(even) {
+  background-color: #e9ecef;
 }/*# sourceMappingURL=style.css.map */
