@@ -76,7 +76,7 @@ main {
 .menu .menu__item .icon {
   width: 2.6em;
   height: 2.6em;
-  stroke: white;
+  stroke: #fff;
   fill: transparent;
   stroke-width: 1pt;
   stroke-miterlimit: 10;
@@ -233,16 +233,16 @@ main {
   font-weight: 500;
   line-height: 1.5;
   margin-bottom: 32px;
-  color: #e6fcf5;
+  color: #fff;
 }
 .carousel .testimonial .testimonial-author {
   font-size: 14px;
   margin-bottom: 4px;
-  color: #c3fae8;
+  color: #fff;
 }
 .carousel .testimonial .testimonial-job {
   font-size: 12px;
-  color: #c3fae8;
+  color: #fff;
 }
 .carousel .btn {
   background-color: #fff;
