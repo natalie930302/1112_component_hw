@@ -12,6 +12,10 @@
   font-family: "Inter", sans-serif;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 html {
   box-sizing: border-box;
   * {
@@ -143,8 +147,7 @@ main {
 }
 
 .accordion {
-  // width: min(700px, 90%);
-  width: 90%;
+  width: min(700px, 90%);
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -199,7 +202,7 @@ main {
       .text {
         color: #087f5b;
       }
-      .icon{
+      .icon {
         transform: rotate(180deg);
       }
     }
@@ -207,8 +210,7 @@ main {
 }
 
 .carousel {
-  // width: min(800px, 85%);
-  width: 90%;
+  width: min(800px, 85%);
   margin: auto;
   background-color: #087f5b;
   padding: 32px 48px 32px 86px;
@@ -221,8 +223,7 @@ main {
     padding: 32px 55px;
   }
   img {
-    // width: min(200px, 85%);
-  width: 90%;
+    width: min(200px, 85%);
     margin: auto;
     border-radius: 8px;
     transform: scale(1.5);
@@ -300,12 +301,11 @@ main {
   }
 }
 
-.table{
-  // width: min(700px, 90%);
-  width: 90%;
+.table {
+  width: min(700px, 90%);
   margin: auto;
-  display: flex;
   overflow-x: scroll;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
   table {
     width: 100%;
     font-size: 18px;
@@ -315,7 +315,7 @@ main {
       padding: 16px 24px;
       text-align: left;
     }
-    thead{
+    thead {
       tr {
         background-color: #087f5b;
         color: #fff;
