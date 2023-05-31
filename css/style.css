@@ -238,11 +238,11 @@ main {
 .carousel .testimonial .testimonial-author {
   font-size: 14px;
   margin-bottom: 4px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
 }
 .carousel .testimonial .testimonial-job {
   font-size: 12px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
 }
 .carousel .btn {
   background-color: #fff;
@@ -320,4 +320,57 @@ main {
 }
 .table table tbody tr:nth-child(even) {
   background-color: #e9ecef;
+}
+
+.pagination {
+  width: min(700px, 90%);
+  margin: auto;
+  overflow-x: scroll;
+}
+.pagination .pagination-wrap {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: auto;
+}
+.pagination .pagination-wrap .btn-nav,
+.pagination .pagination-wrap .btn-page {
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.pagination .pagination-wrap .btn-nav:hover,
+.pagination .pagination-wrap .btn-page:hover {
+  background-color: var(--bgColorItem);
+  color: #fff;
+}
+.pagination .pagination-wrap .btn-nav {
+  padding: 8px;
+  width: 42px;
+  height: 42px;
+  border: 1.5px solid var(--bgColorItem);
+  color: var(--bgColorItem);
+}
+.pagination .pagination-wrap .btn-nav .icon {
+  width: 24px;
+}
+.pagination .pagination-wrap .btn-page {
+  border: none;
+  width: 36px;
+  height: 36px;
+  font-size: 16px;
+}
+.pagination .pagination-wrap .btn-page.selected {
+  background-color: var(--bgColorItem);
+  color: #fff;
+}
+.pagination .pagination-wrap .page-numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 }/*# sourceMappingURL=style.css.map */
