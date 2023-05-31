@@ -174,6 +174,7 @@ main {
   height: 24px;
   stroke: #087f5b;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .accordion .item .hidden-box {
   grid-column: 2;
@@ -199,6 +200,9 @@ main {
 .accordion .item.open .number,
 .accordion .item.open .text {
   color: #087f5b;
+}
+.accordion .item.open .icon{
+  transform: rotate(180deg);
 }
 
 .carousel {

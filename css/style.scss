@@ -171,6 +171,7 @@ main {
       height: 24px;
       stroke: #087f5b;
       cursor: pointer;
+      transition: all 0.5s ease;
     }
     .hidden-box {
       grid-column: 2;
@@ -196,6 +197,9 @@ main {
       .number,
       .text {
         color: #087f5b;
+      }
+      .icon{
+        transform: rotate(180deg);
       }
     }
   }
