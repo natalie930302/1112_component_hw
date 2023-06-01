@@ -350,7 +350,9 @@ main {
   color: #fff;
 }
 .pagination .pagination-wrap .btn-nav {
-  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 42px;
   height: 42px;
   border: 1.5px solid var(--bgColorItem);
