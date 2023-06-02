@@ -356,6 +356,11 @@ main {
   gap: 12px;
   margin: auto;
 }
+@media (max-width: 450px) {
+  .pagination .pagination-wrap {
+    gap: 10px;
+  }
+}
 .pagination .pagination-wrap .btn-nav,
 .pagination .pagination-wrap .btn-page {
   border-radius: 50%;
@@ -378,6 +383,12 @@ main {
   border: 1.5px solid var(--bgColorItem);
   color: var(--bgColorItem);
 }
+@media (max-width: 450px) {
+  .pagination .pagination-wrap .btn-nav {
+    width: 36px;
+    height: 36px;
+  }
+}
 .pagination .pagination-wrap .btn-nav .icon {
   width: 24px;
 }
@@ -391,9 +402,20 @@ main {
   background-color: var(--bgColorItem);
   color: #fff;
 }
+@media (max-width: 450px) {
+  .pagination .pagination-wrap .btn-page {
+    width: 30px;
+    height: 30px;
+  }
+}
 .pagination .pagination-wrap .page-numbers {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
+}
+@media (max-width: 450px) {
+  .pagination .pagination-wrap .page-numbers {
+    gap: 5px;
+  }
 }/*# sourceMappingURL=style.css.map */

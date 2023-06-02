@@ -359,6 +359,9 @@ main {
     justify-content: center;
     gap: 12px;
     margin: auto;
+    @media (max-width: 450px) {
+      gap: 10px;
+    }
     .btn-nav,
     .btn-page {
       border-radius: 50%;
@@ -379,6 +382,10 @@ main {
       height: 42px;
       border: 1.5px solid var(--bgColorItem);
       color: var(--bgColorItem);
+      @media (max-width: 450px) {
+        width: 36px;
+        height: 36px;
+      }
       .icon {
         width: 24px;
       }
@@ -392,12 +399,19 @@ main {
         background-color: var(--bgColorItem);
         color: #fff;
       }
+      @media (max-width: 450px) {
+        width: 30px;
+        height: 30px;
+      }
     }
     .page-numbers {
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 12px;
+      @media (max-width: 450px) {
+        gap: 5px;
+      }
     }
   }
 }
