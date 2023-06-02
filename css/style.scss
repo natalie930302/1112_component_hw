@@ -359,7 +359,7 @@ main {
     justify-content: center;
     gap: 12px;
     margin: auto;
-    @media (max-width: 450px) {
+    @media (max-width: 550px) {
       gap: 10px;
     }
     .btn-nav,
@@ -382,7 +382,7 @@ main {
       height: 42px;
       border: 1.5px solid var(--bgColorItem);
       color: var(--bgColorItem);
-      @media (max-width: 450px) {
+      @media (max-width: 550px) {
         width: 36px;
         height: 36px;
       }
@@ -399,7 +399,7 @@ main {
         background-color: var(--bgColorItem);
         color: #fff;
       }
-      @media (max-width: 450px) {
+      @media (max-width: 550px) {
         width: 30px;
         height: 30px;
       }
@@ -409,7 +409,7 @@ main {
       align-items: center;
       justify-content: center;
       gap: 12px;
-      @media (max-width: 450px) {
+      @media (max-width: 550px) {
         gap: 5px;
       }
     }

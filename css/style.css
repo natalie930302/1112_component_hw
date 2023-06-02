@@ -356,7 +356,7 @@ main {
   gap: 12px;
   margin: auto;
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .pagination .pagination-wrap {
     gap: 10px;
   }
@@ -383,7 +383,7 @@ main {
   border: 1.5px solid var(--bgColorItem);
   color: var(--bgColorItem);
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .pagination .pagination-wrap .btn-nav {
     width: 36px;
     height: 36px;
@@ -402,7 +402,7 @@ main {
   background-color: var(--bgColorItem);
   color: #fff;
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .pagination .pagination-wrap .btn-page {
     width: 30px;
     height: 30px;
@@ -414,7 +414,7 @@ main {
   justify-content: center;
   gap: 12px;
 }
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .pagination .pagination-wrap .page-numbers {
     gap: 5px;
   }
