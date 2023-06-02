@@ -1,10 +1,10 @@
 const carousel = body.querySelector(".carousel");
-const carouselRightBtn = carousel.querySelector(".btn--right");
-const carouselLeftBtn = carousel.querySelector(".btn--left");
-const carouselItems = carousel.querySelectorAll(".carousel_row .item");
+const carouselRightBtn = carousel.querySelector(".btn.right");
+const carouselLeftBtn = carousel.querySelector(".btn.left");
+const carouselItems = carousel.querySelectorAll(".carousel__row .item");
 const carouselDots = carousel.querySelectorAll(".dots .dot");
 let activeCarouselItemIndex = Array.from(carouselItems).indexOf(
-  carousel.querySelector(".carousel_row .item.active")
+  carousel.querySelector(".carousel__row .item.active")
 );
 
 function changeCarouselItem(direction) {

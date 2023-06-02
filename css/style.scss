@@ -278,13 +278,12 @@ main {
       width: 24px;
       stroke: var(--bgColorItem);
     }
-    &.btn--left {
+    &.left {
       left: 0;
       top: 50%;
-
       transform: translate(-50%, -50%);
     }
-    &.btn--right {
+    &.right {
       right: 0;
       top: 50%;
       transform: translate(50%, -50%);
@@ -389,7 +388,7 @@ main {
       width: 36px;
       height: 36px;
       font-size: 16px;
-      &.selected {
+      &.active {
         background-color: var(--bgColorItem);
         color: #fff;
       }

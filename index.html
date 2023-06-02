@@ -32,7 +32,6 @@
             <path d="M7,20 v-15 h7 a4.5,4.5 0 0 1 0,9 h-7" />
           </svg>
         </button>
-
         <div class="menu__border">
           <svg viewBox="0 0 202.9 45.5">
             <clipPath
@@ -173,7 +172,7 @@
           </div>
         </div>
         <div class="carousel hide">
-          <div class="carousel_row">
+          <div class="carousel__row">
             <div class="item active">
               <img src="img\maria.jpg" alt="Maria de Almeida" />
               <blockquote class="testimonial">
@@ -231,7 +230,7 @@
               </blockquote>
             </div>
           </div>
-          <button class="btn btn--left">
+          <button class="btn left">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -247,7 +246,7 @@
               />
             </svg>
           </button>
-          <button class="btn btn--right">
+          <button class="btn right">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -310,19 +309,13 @@
         </div>
         <div class="pagination hide">
           <div class="pagination-wrap">
-            <button class="btn-nav left-btn">
+            <button class="btn-nav prev">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
               </svg>
             </button>
-            <div class="page-numbers">
-              <button class="btn-page">1</button>
-              <button class="btn-page selected">2</button>
-              <button class="btn-page">3</button>
-              <span class="dots">...</span>
-              <button class="btn-page">18</button>
-            </div>
-            <button class="btn-nav right-btn">
+            <div class="page-numbers"></div>
+            <button class="btn-nav next">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
               </svg>
@@ -334,5 +327,38 @@
     <script src="js/menu.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/carousel.js"></script>
+    <script src="js/pagination.js"></script>
   </body>
 </html>
+
+              <!-- <button class="btn-page active">1</button>
+              <button class="btn-page">2</button>
+              <button class="btn-page">3</button>
+              <button class="btn-page">4</button>
+              <button class="btn-page">5</button>
+              <span class="dots">...</span>
+              <button class="btn-page">18</button> -->
+
+              <!-- <button class="btn-page">1</button>
+              <span class="dots">...</span>
+              <button class="btn-page">4</button>
+              <button class="btn-page active">5</button>1+4
+              <button class="btn-page">6</button>
+              <span class="dots">...</span>
+              <button class="btn-page">18</button> -->
+
+              <!-- <button class="btn-page">1</button>
+              <span class="dots">...</span>
+              <button class="btn-page">13</button>
+              <button class="btn-page active">14</button>18-4
+              <button class="btn-page">15</button>
+              <span class="dots">...</span>
+              <button class="btn-page">18</button> -->
+
+              <!-- <button class="btn-page">1</button>
+              <span class="dots">...</span>
+              <button class="btn-page">14</button>
+              <button class="btn-page">15</button>
+              <button class="btn-page">16</button>
+              <button class="btn-page">17</button>
+              <button class="btn-page">18</button> -->

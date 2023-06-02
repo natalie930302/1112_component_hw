@@ -279,12 +279,12 @@ main {
   width: 24px;
   stroke: var(--bgColorItem);
 }
-.carousel .btn.btn--left {
+.carousel .btn.left {
   left: 0;
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.carousel .btn.btn--right {
+.carousel .btn.right {
   right: 0;
   top: 50%;
   transform: translate(50%, -50%);
@@ -387,7 +387,7 @@ main {
   height: 36px;
   font-size: 16px;
 }
-.pagination .pagination-wrap .btn-page.selected {
+.pagination .pagination-wrap .btn-page.active {
   background-color: var(--bgColorItem);
   color: #fff;
 }
