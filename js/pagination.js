@@ -6,7 +6,8 @@ let paginationItems = paginationRow.querySelectorAll(".btn-page");
 let activePaginationPage = 4;
 let maxPaginationPage = 30;
 
-function setPagination() {
+function setPagination(pageNum) {
+  activePaginationPage = pageNum;
   var paginationHTML = ``;
   if (activePaginationPage <= 4) {
     for (var i = 1; i <= 5; i++) {
@@ -64,20 +65,14 @@ function setPagination() {
   paginationItems = paginationRow.querySelectorAll(".btn-page");
   paginationItems.forEach((item) => {
     item.addEventListener("click", () =>
-      changePagination(parseInt(item.textContent))
+      setPagination(parseInt(item.textContent))
     );
   });
 }
-setPagination();
-
-function changePagination(pageNum) {
-  console.log(pageNum);
-  activePaginationPage = pageNum;
-  setPagination();
-}
+setPagination(activePaginationPage);
 
 paginationRightBtn.addEventListener("click", () =>
-  changePagination(
+  setPagination(
     activePaginationPage == maxPaginationPage
       ? maxPaginationPage
       : activePaginationPage + 1
@@ -85,5 +80,5 @@ paginationRightBtn.addEventListener("click", () =>
 );
 
 paginationLeftBtn.addEventListener("click", () =>
-  changePagination(activePaginationPage == 1 ? 1 : activePaginationPage - 1)
+  setPagination(activePaginationPage == 1 ? 1 : activePaginationPage - 1)
 );
